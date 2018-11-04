@@ -1,7 +1,7 @@
 # ObjectOrientedElasticSearch
 An object oriented version of elastic search.
 
-##What is it ?
+## What is it ?
 The Object oriented elastic search is a a package that allow you to index\pull objects to\from elastic 
 search easily. The idea behind this project is to eliminate the need to create and maintain an sdk for 
 objects which you want to index\search for. This tool like most tool isn't a magic :), it's good for 
@@ -101,7 +101,6 @@ the input to QDSL. An example for methods of such an sdk:
     
     
     public class Sdk {
-    
         public String createDslQueryForManagerName(final String managerName) {
             ...
         }
@@ -124,7 +123,7 @@ let's assume you are asked to have complex queries like:
 
 As you can see your sdk can get quite complex pretty fast.
 
-##How is it different than using ES directly ?
+## How is it different than using ES directly ?
 
 The difference with this tool, is that here we don't try to construct a search dsl query using custom logic. 
 Instead we use a simple conventions that allow us to convert any list object to a DSL query. 
@@ -174,7 +173,7 @@ Let's look at another example:
 Generally speaking, a single query object (querySchool represent an 'AND' query of it properties.
 If we want to achieve an 'OR' query then we need to create a list of query objects.
 
-###Best usage for this tool
+### Best usage for this tool
 This tool execute any DSL query that you provide it. Yet as described above it's most suitable for scenarios 
 where:
 You have many objects from different types which you want to index or\and many types of simple queries.
@@ -184,7 +183,7 @@ Revisit the examples mentioned above, you can realize that despite these "limita
 a few scenarios and save you a lot of work. 
 
 
-###Usage examples
+### Usage examples
 
     public static void main(final String[] args) throws Exception {
         final Student student = new Student("April Shterling", "123");
